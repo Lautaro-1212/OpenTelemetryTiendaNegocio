@@ -79,16 +79,6 @@ class OtelConfig{
     createSpan(name){
         return this.tracer.startSpan(name, undefined, context.active());
     }
-
-    createCtx(span){
-      return trace.setSpan(context.active(), span)
-    }
-
-    passContext(ctx, puerto, servicio){
-      context.with(ctx, async () =>{
-        await axios.post(`http://localhost:${puerto}/${servicio}`)
-      })
-    }
 }
 
 module.exports = OtelConfig;
