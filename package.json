@@ -1,0 +1,16 @@
+{
+  "name": "OpenTelemetryTiendaNegocio",
+  "version": "1.0.0",
+  "description": "Configuración sencilla de OpenTelemetry para Node.js",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.65.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.205.0",
+    "@opentelemetry/resources": "^2.1.0",
+    "@opentelemetry/sdk-node": "^0.205.0",
+    "@opentelemetry/semantic-conventions": "^1.37.0",
+    "axios": "^1.11.0"
+  }
+}
