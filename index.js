@@ -1,1 +1,1 @@
-module.exports = require("./lib/OtelConfig");
+module.exports = require("./lib/modelOtelConfig");
